@@ -1,16 +1,41 @@
-# React + Vite
+# Fraud Detection Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based dashboard for monitoring the Real-Time Fraud Detection Platform.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live transaction monitoring:** Displays recent transactions and their fraud predictions.
+- **Fraud statistics:** Summarizes transaction volume, detected fraud, missed fraud, and false positives.
+- **Automatic refresh:** Fetches updated data from the Dashboard API every five seconds.
+- **Transaction history:** Displays prediction results, fraud scores, and processing timestamps.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- FastAPI
+- REST API integration
 
-## Expanding the ESLint configuration
+## Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+From the project root, start the full platform:
+
+```bash
+./start.sh
+```
+
+Open the dashboard in your browser:
+
+http://localhost:5173/
+
+The Dashboard API runs at `http://127.0.0.1:8001`, and its interactive API documentation is available at:
+
+http://127.0.0.1:8001/docs
+
+To stop the application processes:
+
+```bash
+./stop.sh
+```
+
+For full setup instructions, architecture, model evaluation results, and limitations, see the [main project README](../README.md).
