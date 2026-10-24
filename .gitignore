@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local runtime files and logs
+.run/
+logs/
+*.log
+
+# Large dataset and local data files
+ml-service/data/
+*.csv
+
+# Node / React
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
